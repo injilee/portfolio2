@@ -1,0 +1,55 @@
+@mixin text-style-19() {
+  font-size: $font-size-19;
+  line-height: $line-height-19;
+  letter-spacing: $letter-spacing-19;
+}
+
+@mixin text-style-28() {
+  font-size: $font-size-28;
+  line-height: $line-height-28;
+  letter-spacing: $letter-spacing-28;
+}
+
+@mixin text-style-32() {
+  font-size: $font-size-32;
+  line-height: $line-height-32;
+  letter-spacing: $letter-spacing-32;
+}
+
+@mixin text-style-48() {
+  font-size: $font-size-48;
+  line-height: $line-height-48;
+  letter-spacing: $letter-spacing-48;
+}
+
+@mixin text-style-64() {
+  font-size: $font-size-64;
+  line-height: $line-height-64;
+  letter-spacing: $letter-spacing-64;
+}
+
+@mixin text-style($size, $color: false) {
+  @if ($size == 19) {
+    @include text-style-19;
+  }
+
+  @if ($size == 28) {
+    @include text-style-28;
+  }
+
+  @if ($size == 32) {
+    @include text-style-32;
+  }
+
+  @if ($size == 48) {
+    @include text-style-48;
+  }
+
+  @if ($size == 64) {
+    @include text-style-64;
+  }
+
+  @if (type-of($color) == color) {
+    color: $color;
+  }
+}
