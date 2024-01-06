@@ -1,5 +1,2 @@
-p {
-  font-size: 15px;
-  color: black;
-  background-color: #fff;
-}
+@import './base/nomalize';
+@import './base/reset';
