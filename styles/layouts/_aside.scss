@@ -1,0 +1,67 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: $menu-level;
+  width: 100%;
+  height: 100%;
+  background-color: $primary;
+  transition: clip-path 0.3s ease-in-out;
+
+  &.inactive {
+    clip-path: circle(0% at 100% 0);
+  }
+
+  &.active {
+    clip-path: circle(75%);
+  }
+
+  &-container {
+    position: relative;
+    height: 100vh;
+
+    .menu-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include column-flexbox(start, start);
+      width: 100%;
+      padding: 0 4rem;
+      color: $white;
+      transform: translate(-50%, -50%);
+
+      @include responsive('T') {
+        @include flexbox;
+        padding: 0;
+      }
+
+      .menu-item {
+        @include text-style(48);
+        display: inline-block;
+        margin-bottom: 1.875rem;
+        font-weight: 600;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::after {
+          display: block;
+          width: 0;
+          height: 0.0625rem;
+          background-color: $white;
+          content: '';
+          transition: 300ms ease-in;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
