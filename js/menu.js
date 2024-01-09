@@ -1,6 +1,7 @@
 const menu = $('.menu')
 const menuBtn = $('.menu-trigger')
 const btnBar = $('.btn-bar')
+const menuList = $('.menu-content')
 
 let isClick = false
 
@@ -34,6 +35,12 @@ function hideMenu() {
   menu.attr('aria-hidden', 'true')
 }
 
+// 메뉴 리스트 클릭 시 해당 섹션으로 이동
+menuList.on('click', 'a', () => {
+  hideMenu()
+})
+
+// 메뉴 버튼 클릭 시 메뉴창 보이기/숨기기
 menuBtn.on('click', () => {
   if (!isClick) {
     showMenu()
