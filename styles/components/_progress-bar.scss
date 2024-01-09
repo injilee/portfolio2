@@ -1,0 +1,26 @@
+%bar-base {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.progress-bar {
+  @extend %bar-base;
+  height: 0.75rem;
+
+  @include responsive('T') {
+    height: 1.25rem;
+  }
+}
+
+.bar {
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 200ms ease 0s;
+}
