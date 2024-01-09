@@ -1,3 +1,9 @@
+@mixin text-style-16() {
+  font-size: $font-size-16;
+  line-height: $line-height-16;
+  letter-spacing: $letter-spacing-16;
+}
+
 @mixin text-style-19() {
   font-size: $font-size-19;
   line-height: $line-height-19;
@@ -35,6 +41,10 @@
 }
 
 @mixin text-style($size, $color: false) {
+  @if ($size == 16) {
+    @include text-style-16;
+  }
+
   @if ($size == 19) {
     @include text-style-19;
   }
