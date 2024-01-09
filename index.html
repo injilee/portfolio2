@@ -26,31 +26,34 @@
         </div>
 
         <div class="menu-btn">
-          <h2 class="visually-hidden">메뉴창 열기</h2>
-          <div class="inner">
-            <div class="btn-line01"></div>
-            <div class="btn-line02"></div>
-            <div class="btn-line03"></div>
-          </div>
+          <button aria-label="메뉴창 열기" class="menu-trigger" id="menu01">
+            <span class="btn-bar"></span>
+            <span class="btn-bar"></span>
+            <span class="btn-bar"></span>
+          </button>
         </div>
 
         <!-- aside 메뉴 -->
-        <aside class="menu">
-          <div class="menu-container">
-            <nav aria-label="메뉴">
+        <aside class="menu inactive">
+            <nav aria-label="메뉴" class="menu-container">
               <ul class="menu-content">
-                <li class="menu-item" aria-label="홈으로 이동하기">Home</li>
+                <li class="menu-item" aria-label="홈으로 이동하기">
+                  <a href="#none">Home</a>
+                </li>
                 <li
                   class="menu-item"
                   aria-label="Experiences 섹션으로 이동하기"
                 >
-                  Experiences
+                  
+                <a href="#none">Experiences</a>
                 </li>
                 <li class="menu-item" aria-label="Skills 섹션으로 이동하기">
-                  Skills
+                  
+                  <a href="#none">Skills</a>
                 </li>
                 <li class="menu-item" aria-label="Contact 섹션으로 이동하기">
-                  Contact
+                  
+                  <a href="#none">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -60,7 +63,6 @@
               type="button"
               aria-label="메뉴창 닫기"
             ></button>
-          </div>
         </aside>
 
         <!-- main -->
@@ -217,7 +219,7 @@
                     <dd class="keyword-data">Firebase</dd>
                   </dl>
                   <p class="exp-desc">
-                    React로제작한 반려동물등록증을 만들 수 있는 웹 페이지
+                    React로 제작한 반려동물등록증을 만들 수 있는 웹 페이지
                     입니다. Firebase로 백엔드 구축, Cloudinary API를 사용해
                     이미지 업로드 및 카드 이미지 저장 가능합니다.
                   </p>
@@ -400,5 +402,7 @@
         </footer>
       </div>
     </div>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

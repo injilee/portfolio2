@@ -1,0 +1,42 @@
+footer {
+  padding: 0 1.875rem 4.5rem;
+
+  @include responsive('T') {
+    padding: 0 8.9375rem;
+  }
+
+  @include responsive('D') {
+    padding: 0 7rem;
+  }
+}
+
+.contact {
+  padding: 2.5rem 0 7.5rem;
+
+  &-content {
+    .contact-item {
+      position: relative;
+      padding-left: 0.65rem;
+      @include text-style(19);
+
+      &::before {
+        position: absolute;
+        top: 0.7rem;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        background-color: $primary;
+        border-radius: 50%;
+        content: '';
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @include responsive('T') {
+        @include text-style(19);
+      }
+    }
+  }
+}
