@@ -1,10 +1,6 @@
 a {
   cursor: pointer;
 
-  &:hover {
-    text-decoration: underline;
-  }
-
   &::after {
     margin-left: 0.1rem;
     font-weight: 400;
@@ -12,18 +8,17 @@ a {
   }
 }
 
-li {
-  position: relative;
-  padding-left: 0.65rem;
+.no-scroll {
+  overflow: hidden;
+}
 
-  &::before {
-    position: absolute;
-    top: 0.7rem;
-    left: 0;
-    width: 4px;
-    height: 4px;
-    background-color: $primary;
-    border-radius: 50%;
-    content: '';
-  }
+.visually-hidden {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
