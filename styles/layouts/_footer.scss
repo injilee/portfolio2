@@ -16,7 +16,7 @@ footer {
   &-content {
     .contact-item {
       position: relative;
-      padding-left: 0.65rem;
+      padding-left: 0.75rem;
       @include text-style(19);
 
       &::before {
@@ -30,7 +30,7 @@ footer {
         content: '';
       }
 
-      &:hover {
+      a:hover {
         text-decoration: underline;
       }
 
