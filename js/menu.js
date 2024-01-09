@@ -11,6 +11,12 @@ function showMenu() {
   btnBar.addClass('active')
   menuBtn.addClass('active')
   menu.addClass('active')
+
+  // 스크린 리더에 메뉴 펼침 상태 제공
+  menuBtn.attr('aria-expanded', 'true')
+
+  // 스크린 리더에 메뉴 보이기
+  menu.attr('aria-hidden', 'false')
 }
 
 function hideMenu() {
@@ -20,6 +26,12 @@ function hideMenu() {
   btnBar.removeClass('active')
   menuBtn.removeClass('active')
   menu.removeClass('active')
+
+  // 스크린 리더에 메뉴 접힘 상태 제공
+  menuBtn.attr('aria-expanded', 'false')
+
+  // 스크린 리더에 메뉴 숨기기
+  menu.attr('aria-hidden', 'true')
 }
 
 menuBtn.on('click', () => {

@@ -26,7 +26,7 @@
         </div>
 
         <div class="menu-btn">
-          <button aria-label="메뉴창 열기" class="menu-trigger" id="menu01">
+          <button type="button" aria-label="메뉴창 열기" class="menu-trigger" id="menu01" aria-expanded="false" aria-controls="menu">
             <span class="btn-bar"></span>
             <span class="btn-bar"></span>
             <span class="btn-bar"></span>
@@ -34,41 +34,35 @@
         </div>
 
         <!-- aside 메뉴 -->
-        <aside class="menu inactive">
+        <aside class="menu inactive" aria-hidden="true">
             <nav aria-label="메뉴" class="menu-container">
               <ul class="menu-content">
                 <li class="menu-item" aria-label="홈으로 이동하기">
-                  <a href="#none">Home</a>
+                  <a href="#intro">Home</a>
                 </li>
                 <li
                   class="menu-item"
                   aria-label="Experiences 섹션으로 이동하기"
                 >
                   
-                <a href="#none">Experiences</a>
+                <a href="#exp">Experiences</a>
                 </li>
                 <li class="menu-item" aria-label="Skills 섹션으로 이동하기">
                   
-                  <a href="#none">Skills</a>
+                  <a href="#skills">Skills</a>
                 </li>
                 <li class="menu-item" aria-label="Contact 섹션으로 이동하기">
                   
-                  <a href="#none">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>
-
-            <button
-              class="visually-hidden"
-              type="button"
-              aria-label="메뉴창 닫기"
-            ></button>
         </aside>
 
         <!-- main -->
         <main>
           <!-- main 인트로 섹션 -->
-          <section class="intro">
+          <section class="intro" id="intro">
             <!-- main 인트로 소개 -->
             <h1 class="intro-title">
               안녕하세요<br />웹 퍼블리셔<br />이인지입니다.
@@ -91,7 +85,7 @@
           </section>
 
           <!-- Experiences 섹션 -->
-          <section class="exp">
+          <section class="exp" id="exp">
             <h1 class="title">Experiences</h1>
 
             <div class="exp-list">
@@ -297,7 +291,7 @@
           </section>
 
           <!-- skills 섹션 -->
-          <section class="skills">
+          <section class="skills" id="skills">
             <h1 class="title">Skills</h1>
 
             <div class="skills-wrap">
@@ -369,7 +363,7 @@
 
         <!-- footer -->
         <footer>
-          <section class="contact">
+          <section class="contact" id="contact">
             <h1 class="title">Contact</h1>
 
             <ul class="contact-content">
@@ -399,6 +393,8 @@
               </li>
             </ul>
           </section>
+
+          <button type="button"></button>
         </footer>
       </div>
     </div>
