@@ -3,8 +3,402 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>포트폴리오 / 이인지</title>
+    <meta name="description" content="웹 퍼블리셔 이인지 포트폴리오" />
+    <meta name="author" content="Inji Lee <lij8016@mail.com>" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="root">
+      <div class="layout">
+        <!-- 상단 프로그레스 스크롤바 -->
+        <div class="progress-bar">
+          <div class="bar"></div>
+        </div>
+
+        <div class="menu-btn">
+          <h2 class="visually-hidden">메뉴창 열기</h2>
+          <div class="inner">
+            <div class="btn-line01"></div>
+            <div class="btn-line02"></div>
+            <div class="btn-line03"></div>
+          </div>
+        </div>
+
+        <!-- aside 메뉴 -->
+        <aside class="menu">
+          <div class="menu-container">
+            <nav aria-label="메뉴">
+              <ul class="menu-content">
+                <li class="menu-item" aria-label="홈으로 이동하기">Home</li>
+                <li
+                  class="menu-item"
+                  aria-label="Experiences 섹션으로 이동하기"
+                >
+                  Experiences
+                </li>
+                <li class="menu-item" aria-label="Skills 섹션으로 이동하기">
+                  Skills
+                </li>
+                <li class="menu-item" aria-label="Contact 섹션으로 이동하기">
+                  Contact
+                </li>
+              </ul>
+            </nav>
+
+            <button
+              class="visually-hidden"
+              type="button"
+              aria-label="메뉴창 닫기"
+            ></button>
+          </div>
+        </aside>
+
+        <!-- main -->
+        <main>
+          <!-- main 인트로 섹션 -->
+          <section class="intro">
+            <!-- main 인트로 소개 -->
+            <h1 class="intro-title">
+              안녕하세요<br />웹 퍼블리셔<br />이인지입니다.
+            </h1>
+            <!-- main 인트로 내용 -->
+            <p class="intro-desc">
+              신입 웹 퍼블리셔 이인지입니다. 저는 ‘미디어스토리텔링과’를
+              전공하며, 스토리텔링을 기반으로 한 미디어 컨텐츠 제작에 대한
+              지식을 배웠습니다. 학과 졸업 후 교육 컨텐츠 개발 업무를 하게
+              되었고 개발 분야에 관심을 갖게 되었습니다. 웹 퍼블리셔를 목표로
+              국비교육을 수강하게 되었고, 넓은 개발 지식을 이해하고 배워보고자
+              프론트엔드 영역에 대한 공부를 스스로 하면서 React와 Firebase DB,
+              REST API를 배웠습니다.
+            </p>
+            <p class="intro-desc">
+              실무와 교육 수강으로 다져진 경험은 디자이너와 개발자의 고충을
+              이해하고, 배려하며 소통하는 데에도 큰 강점으로 작용할 것이라고
+              생각합니다.
+            </p>
+          </section>
+
+          <!-- Experiences 섹션 -->
+          <section class="exp">
+            <h1 class="title">Experiences</h1>
+
+            <div class="exp-list">
+              <div class="exp-left">
+                <img
+                  src="./assets/images/benope.png"
+                  alt="베노프 클론 사이트"
+                  width="400"
+                  height="400"
+                />
+              </div>
+
+              <div class="exp-right">
+                <div class="exp-textbox">
+                  <strong class="exp-title">Benope</strong>
+                  <dl class="keyword">
+                    <dt class="visually-hidden">구현 기능</dt>
+                    <dd class="keyword-data">터치 슬라이드</dd>
+                    <dd class="keyword-data">아코디언 메뉴</dd>
+                    <dd class="keyword-data">반응형</dd>
+                    <dd class="keyword-data">jQuery</dd>
+                  </div>
+                  <p class="exp-desc">
+                    기존 Benope 사이트를 클론 코딩한 사이트로, 반응형 디자인,
+                    마우스 hover 효과 및 아코디언 메뉴를 추가 하였습니다.
+                    플러그인 없이 top 버튼, 아코디언 메뉴, 터치/마우스 드래그
+                    슬라이드, 모달창 등의 기능 구현을 했고 재사용 가능한 CSS
+                    스타일로 구현하였습니다.
+                  </p>
+
+                  <div class="view-btn">
+                    <a href="#none" target="_blank" rel="noreferrer">view site</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="exp-list">
+              <div class="exp-left">
+                <img
+                  src="./assets/images/lionbooks.png"
+                  alt="그림책 라이언 사이트"
+                  width="400"
+                  height="400"
+                />
+              </div>
+
+              <div class="exp-right">
+                <div class="exp-textbox">
+                  <strong class="exp-title">Artbook lion</strong>
+                  <dl class="keyword">
+                    <dt class="visually-hidden">구현 기능</dt>
+                    <dd class="keyword-data">React Hooks</dd>
+                    <dd class="keyword-data">Axios</dd>
+                    <dd class="keyword-data">redux-toolkit</dd>
+                    <dd class="keyword-data">redux-persist</dd>
+                    <dd class="keyword-data">Styled-conponents</dd>
+                  </dl>
+                  <p class="exp-desc">
+                    그림책 추천 플랫폼, 그림책 라이언 사이트 입니다.
+                    로그인/회원가입 기능, 네이버 도서 API를 이용한 도서 검색
+                    기능, axios로 http 통신, redux-toolkit, redux-persist를
+                    사용해 데이터 유지, firebase storage로 프로필 이미지 변경할
+                    수 있습니다.
+                  </p>
+                </div>
+
+                <div class="view-btn">
+                  <a href="#none" target="_blank" rel="noreferrer">view site</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-list">
+              <div class="exp-left">
+                <img
+                  src="./assets/images/natural-archive.png"
+                  alt="김창림 포토그래퍼의 포트폴리오 사이트"
+                  width="400"
+                  height="400"
+                />
+              </div>
+
+              <div class="exp-right">
+                <div class="exp-textbox">
+                  <strong class="exp-title">Natural Archive</strong>
+                  <dl class="keyword">
+                    <dt class="visually-hidden">구현 기능</dt>
+                    <dd class="keyword-data">반응형</dd>
+                    <dd class="keyword-data">캐러셀 슬라이드</dd>
+                    <dd class="keyword-data">React Hooks</dd>
+                    <dd class="keyword-data">Styled-conponents</dd>
+                  </dl>
+                  <p class="exp-desc">
+                    '김창림 포토그래퍼'의 개인 포트폴리오로 제작한 반응형 웹
+                    사이트 입니다. SEO 지원 및 구글 서치 콘솔에 등록하여 구글
+                    검색 시 결과 노출되도록 했고 플러그인 없이 캐러셀을
+                    구현했습니다.
+                  </p>
+                </div>
+
+                <div class="view-btn">
+                  <a href="#none" target="_blank" rel="noreferrer">view site</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-list">
+              <div class="exp-left">
+                <img
+                  src="./assets/images/pet-license-maker.png"
+                  alt="Pet License Maker"
+                  width="400"
+                  height="400"
+                />
+              </div>
+
+              <div class="exp-right">
+                <div class="exp-textbox">
+                  <strong class="exp-title">Pet license maker</strong>
+                  <dl class="keyword">
+                    <dt class="visually-hidden">구현 기능</dt>
+                    <dd class="keyword-data">반응형</dd>
+                    <dd class="keyword-data">React, React Router</dd>
+                    <dd class="keyword-data">postCSS</dd>
+                    <dd class="keyword-data">Firebase</dd>
+                  </dl>
+                  <p class="exp-desc">
+                    React로제작한 반려동물등록증을 만들 수 있는 웹 페이지
+                    입니다. Firebase로 백엔드 구축, Cloudinary API를 사용해
+                    이미지 업로드 및 카드 이미지 저장 가능합니다.
+                  </p>
+                </div>
+
+                <div class="view-btn">
+                  <a href="#none" target="_blank" rel="noreferrer">view site</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-list">
+              <div class="exp-left">
+                <img
+                  src="./assets/images/mytube.png"
+                  alt="Mytube"
+                  width="400"
+                  height="400"
+                />
+              </div>
+
+              <div class="exp-right">
+                <div class="exp-textbox">
+                  <strong class="exp-title">Mytube</strong>
+                  <dl class="keyword">
+                    <dt class="visually-hidden">구현 기능</dt>
+                    <dd class="keyword-data">반응형</dd>
+                    <dd class="keyword-data">React</dd>
+                    <dd class="keyword-data">YoutubeAPI</dd>
+                    <dd class="keyword-data">postCSS</dd>
+                  </dl>
+                  <p class="exp-desc">
+                    Youtube 클론 코딩 웹 페이지 입니다. React를 기반으로
+                    제작하였으며 Youtube API를 사용해 동영상 목록 정렬 및 검색
+                    가능합니다.
+                  </p>
+                </div>
+
+                <div class="view-btn">
+                  <a href="#none" target="_blank" rel="noreferrer">view site</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-list">
+              <div class="exp-left">
+                <img
+                  src="./assets/images/protect-the-earth.png"
+                  alt="Protect the earth"
+                  width="400"
+                  height="400"
+                />
+              </div>
+
+              <div class="exp-right">
+                <div class="exp-textbox">
+                  <strong class="exp-title">Protect the earth</strong>
+                  <dl class="keyword">
+                    <dt class="visually-hidden">구현 기능</dt>
+                    <dd class="keyword-data">HTML5</dd>
+                    <dd class="keyword-data">CSS</dd>
+                    <dd class="keyword-data">Javascript</dd>
+                  </dl>
+                  <p class="exp-desc">
+                    Vanilla Javascript로 제작한 지구를 지키기 위해 버그를 잡는
+                    게임 입니다. 게임 시작 시 10초의 카운드 다운이 시작되며, 당근과 버그는 랜덤한 위치에 배치되도록 했고 남은 버그의 마리 수를 화면에 출력하도록 했습니다.
+                  </p>
+                </div>
+
+                <div class="view-btn">
+                  <a href="#none" target="_blank" rel="noreferrer">view site</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- skills 섹션 -->
+          <section class="skills">
+            <h1 class="title">Skills</h1>
+
+            <div class="skills-wrap">
+              <!-- skills 왼쪽 박스 -->
+              <!-- <div class="skills-left">
+                <ul>
+                  <li aria-hidden="true">HTML5<br />CSS3</li>
+                  <li aria-hidden="true">JAVASCRIPT</li>
+                  <li aria-hidden="true">OTHERS</li>
+                </ul>
+              </div> -->
+
+              <!-- skills 오른쪽 박스 -->
+              <div class="skills-right" aria-hidden="true">
+                <div class="skills-markup">
+                  <!-- html&css 타이틀 -->
+                  <h3 class="skills-title">HTML5<br />CSS3</h3>
+
+                  <!-- html&css 텍스트 내용 -->
+                  <ul class="skills-content">
+                    <li class="skills-item">
+                      한국형 웹 콘텐츠 접근성 지침(KWCAG 2.2) 준수
+                    </li>
+                    <li class="skills-item">
+                      시멘틱 마크업을 통한 의미있는 구조 설계
+                    </li>
+                    <li class="skills-item">반응형 웹사이트 구축</li>
+                    <li class="skills-item">CSS 3.0 & 크로스브라우징</li>
+                    <li class="skills-item">SCSS를 이용한 프리프로세싱</li>
+                  </ul>
+                </div>
+
+                <div class="skills-script">
+                  <!-- javascript 타이틀 -->
+                  <h3 class="skills-title">JAVASCRIPT</h3>
+
+                  <!-- javascript 텍스트 내용 -->
+                  <ul class="skills-content">
+                    <li class="skills-item">비동기 통신(ajax)에 대한 이해</li>
+                    <li class="skills-item">프로그레스 바, 스크롤 애니메이션,</li>
+                    <li class="skills-item">
+                      터치&드래그 슬라이드, 아코디언 메뉴,
+                    </li>
+                    <li class="skills-item">jQuery를 이용한 애니메이션 구현</li>
+                    <li class="skills-item">React 컴포넌트 구현</li>
+                  </ul>
+                </div>
+
+                <div class="skills-others">
+                  <!-- others 타이틀 -->
+                  <h3 class="skills-title">others</h3>
+
+                  <!-- others 텍스트 내용 -->
+                  <ul class="skills-content">
+                    <li class="skills-item">
+                      Excel 데이터를 이용한 Database 설계
+                    </li>
+                    <li class="skills-item">UI/UX에 대한 이해</li>
+                    <li class="skills-item">
+                      Photoshop, Figma를 활용한 웹사이트 시안 제작
+                    </li>
+                    <li class="skills-item">Github 관리</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+          <section class="contact">
+            <h1 class="title">Contact</h1>
+
+            <ul class="contact-content">
+              <li class="contact-item">
+                <a
+                  href="mailto:lij8016@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  >이메일</a
+                >
+              </li>
+              <li class="contact-item">
+                <a
+                  href="https://github.com/injilee"
+                  target="_blank"
+                  rel="noreferrer"
+                  >깃허브</a
+                >
+              </li>
+              <li class="contact-item">
+                <a
+                  href="https://velog.io/@easy_dev"
+                  target="_blank"
+                  rel="noreferrer"
+                  >블로그</a
+                >
+              </li>
+            </ul>
+          </section>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
