@@ -1,0 +1,29 @@
+a {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::after {
+    margin-left: 0.1rem;
+    font-weight: 400;
+    content: '↗️';
+  }
+}
+
+li {
+  position: relative;
+  padding-left: 0.65rem;
+
+  &::before {
+    position: absolute;
+    top: 0.7rem;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $primary;
+    border-radius: 50%;
+    content: '';
+  }
+}
