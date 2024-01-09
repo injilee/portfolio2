@@ -1,10 +1,20 @@
+@import './constants/breackpoints';
+@import './constants/colors';
+@import './constants/typography';
+@import './constants/z-indexes';
+
+@import './base/nomalize';
+@import './base/reset';
+@import './base/common';
+
+@import './mixins/animaition';
 @import './mixins/flexbox';
 @import './mixins/responsive';
 @import './mixins/text-style';
 
-@import './constants/breackpoints';
-@import './constants/colors';
-@import './constants/typography';
+@import './layouts/footer';
+@import './layouts/main';
+@import './layouts/aside';
 
-@import './base/nomalize';
-@import './base/reset';
+@import './components/buttons';
+@import './components/progress-bar';
