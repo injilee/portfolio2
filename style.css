@@ -439,7 +439,7 @@ footer {
   padding: 2.5rem 0 7.5rem; }
   .contact-content .contact-item {
     position: relative;
-    padding-left: 0.75rem;
+    padding-left: 0.6875rem;
     font-size: 1.1875rem;
     line-height: 1.8rem;
     letter-spacing: -0.01em; }
@@ -530,7 +530,7 @@ main {
         .exp-list .exp-left {
           flex-shrink: 0;
           width: 20rem;
-          margin-bottom: 1.3rem; } }
+          margin-bottom: 1.3125rem; } }
       @media screen and (min-width: 1200px) {
         .exp-list .exp-left {
           flex-shrink: 0;
@@ -556,7 +556,7 @@ main {
         font-size: 1.5rem;
         line-height: 2rem;
         letter-spacing: -0.02em;
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.3125rem;
         font-weight: 700; }
         @media screen and (min-width: 768px) {
           .exp-list .exp-right .exp-title {
@@ -571,14 +571,14 @@ main {
         font-size: 1rem;
         line-height: 1.5rem;
         letter-spacing: -0.01em;
-        margin-bottom: 0.6rem; }
+        margin-bottom: 0.625rem; }
         @media screen and (min-width: 768px) {
           .exp-list .exp-right .keyword {
             font-size: 1.1875rem;
             line-height: 1.8rem;
             letter-spacing: -0.01em; } }
         .exp-list .exp-right .keyword-data {
-          margin-right: 0.3rem;
+          margin-right: 0.3125rem;
           font-weight: 500;
           opacity: 0.5; }
           .exp-list .exp-right .keyword-data::before {
@@ -591,7 +591,7 @@ main {
         font-size: 1.1875rem;
         line-height: 1.8rem;
         letter-spacing: -0.01em;
-        margin-bottom: 0.7rem; }
+        margin-bottom: 0.6875rem; }
         @media screen and (min-width: 1200px) {
           .exp-list .exp-right .exp-desc {
             font-size: 1.1875rem;
@@ -615,13 +615,13 @@ main {
     font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: -0.02em;
-    margin-bottom: 0.3rem; }
+    margin-bottom: 0.3125rem; }
     @media screen and (min-width: 768px) {
       .skills-title {
         font-size: 2rem;
         line-height: 2.75rem;
         letter-spacing: -0.02em;
-        margin-bottom: 0.9rem; } }
+        margin-bottom: 0.875rem; } }
   .skills-content {
     margin-bottom: 2rem; }
     .skills-content .skills-item {
@@ -632,7 +632,7 @@ main {
       letter-spacing: -0.01em; }
       .skills-content .skills-item::before {
         position: absolute;
-        top: 0.7rem;
+        top: 0.8rem;
         left: 0;
         width: 4px;
         height: 4px;
@@ -680,7 +680,7 @@ main {
       align-items: flex-start;
       justify-content: flex-start;
       width: 100%;
-      padding: 0 4rem;
+      padding: 0 2rem;
       color: #fff;
       transform: translate(-50%, -50%); }
       @media screen and (min-width: 768px) {
@@ -690,12 +690,18 @@ main {
           justify-content: center;
           padding: 0; } }
       .menu-container .menu-content .menu-item {
-        font-size: 3rem;
-        line-height: 4.0625rem;
-        letter-spacing: 0;
+        font-size: 2.375rem;
+        line-height: 3rem;
+        letter-spacing: -0.02em;
         display: inline-block;
-        margin-bottom: 1.875rem;
+        margin-bottom: 1rem;
         font-weight: 600; }
+        @media screen and (min-width: 768px) {
+          .menu-container .menu-content .menu-item {
+            font-size: 3rem;
+            line-height: 4.0625rem;
+            letter-spacing: 0;
+            margin-bottom: 1.875rem; } }
         .menu-container .menu-content .menu-item:last-child {
           margin-bottom: 0; }
         .menu-container .menu-content .menu-item::after {
