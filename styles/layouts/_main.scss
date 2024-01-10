@@ -66,7 +66,7 @@ main {
       @include responsive('T') {
         flex-shrink: 0;
         width: 20rem;
-        margin-bottom: 1.3rem;
+        margin-bottom: 1.3125rem;
       }
 
       @include responsive('D') {
@@ -93,7 +93,7 @@ main {
       .exp-title {
         display: block;
         @include text-style(24);
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.3125rem;
         font-weight: 700;
 
         @include responsive('T') {
@@ -105,14 +105,14 @@ main {
         @include flexbox(start, center);
         flex-wrap: wrap;
         @include text-style(16);
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.625rem;
 
         @include responsive('T') {
           @include text-style(19);
         }
 
         &-data {
-          margin-right: 0.3rem;
+          margin-right: 0.3125rem;
           font-weight: 500;
           opacity: 0.5;
 
@@ -130,7 +130,7 @@ main {
 
       .exp-desc {
         @include text-style(19);
-        margin-bottom: 0.7rem;
+        margin-bottom: 0.6875rem;
 
         @include responsive('D') {
           @include text-style(19);
@@ -157,11 +157,11 @@ main {
 
   &-title {
     @include text-style(24);
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.3125rem;
 
     @include responsive('T') {
       @include text-style(32);
-      margin-bottom: 0.9rem;
+      margin-bottom: 0.875rem;
     }
   }
 
@@ -175,7 +175,7 @@ main {
 
       &::before {
         position: absolute;
-        top: 0.7rem;
+        top: 0.8rem;
         left: 0;
         width: 4px;
         height: 4px;

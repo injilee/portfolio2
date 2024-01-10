@@ -26,7 +26,7 @@
       left: 50%;
       @include column-flexbox(start, start);
       width: 100%;
-      padding: 0 4rem;
+      padding: 0 2rem;
       color: $white;
       transform: translate(-50%, -50%);
 
@@ -36,10 +36,15 @@
       }
 
       .menu-item {
-        @include text-style(48);
+        @include text-style(38);
         display: inline-block;
-        margin-bottom: 1.875rem;
+        margin-bottom: 1rem;
         font-weight: 600;
+
+        @include responsive('T') {
+          @include text-style(48);
+          margin-bottom: 1.875rem;
+        }
 
         &:last-child {
           margin-bottom: 0;

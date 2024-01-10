@@ -16,7 +16,7 @@ footer {
   &-content {
     .contact-item {
       position: relative;
-      padding-left: 0.75rem;
+      padding-left: 0.6875rem;
       @include text-style(19);
 
       &::before {
