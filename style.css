@@ -515,25 +515,35 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4rem; }
+    margin-bottom: 5rem; }
     @media screen and (min-width: 1200px) {
       .exp-list {
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: row;
-        margin-bottom: 5rem; } }
+        margin-bottom: 7rem; } }
+    .exp-list .exp-left,
+    .exp-list .exp-right {
+      transition: opacity 200ms ease-in, transform 350ms ease-in, -webkit-transform 350ms ease-in; }
+    .exp-list .exp-left.appear,
+    .exp-list .exp-right.appear {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0); }
     .exp-list .exp-left {
       width: 18rem;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      opacity: 0;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
       @media screen and (min-width: 768px) {
         .exp-list .exp-left {
           flex-shrink: 0;
           width: 20rem;
-          margin-bottom: 1.3125rem; } }
+          margin-bottom: 2rem; } }
       @media screen and (min-width: 1200px) {
         .exp-list .exp-left {
-          flex-shrink: 0;
           width: 22rem;
           margin-bottom: 0; } }
       .exp-list .exp-left img {
@@ -544,13 +554,19 @@ main {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: flex-start; }
+      justify-content: flex-start;
+      opacity: 0;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
       @media screen and (min-width: 1200px) {
         .exp-list .exp-right {
           display: flex;
           align-items: flex-start;
           justify-content: center;
-          max-width: 45rem; } }
+          max-width: 45rem;
+          -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+          margin-left: 2rem; } }
       .exp-list .exp-right .exp-title {
         display: block;
         font-size: 1.5rem;
@@ -746,10 +762,30 @@ main {
       .menu-btn .menu-trigger .btn-bar.active {
         background-color: #fff; }
 
+.top-btn-wrap {
+  text-align: right; }
+  .top-btn-wrap .top-btn {
+    font-size: 1.1875rem;
+    line-height: 1.8rem;
+    letter-spacing: -0.01em;
+    padding: 0.5rem;
+    font-weight: 400;
+    cursor: pointer; }
+    .top-btn-wrap .top-btn::after {
+      display: inline-block;
+      padding-left: 0.3125rem;
+      content: '⭡'; }
+    .top-btn-wrap .top-btn:hover {
+      text-decoration: underline; }
+  @media screen and (min-width: 768px) {
+    .top-btn-wrap {
+      padding-bottom: 4.5rem; } }
+
 .progress-bar {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9;
   display: flex;
   flex-grow: 0;
   flex-shrink: 0;
