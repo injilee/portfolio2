@@ -692,7 +692,7 @@ main {
     height: 100vh; }
     .menu-container .menu-content {
       position: absolute;
-      top: 50%;
+      top: 47%;
       left: 50%;
       display: flex;
       flex-direction: column;
@@ -773,10 +773,12 @@ main {
     letter-spacing: -0.01em;
     padding: 0.5rem;
     font-weight: 400;
+    color: #000;
     cursor: pointer; }
     .top-btn-wrap .top-btn::after {
       display: inline-block;
       padding-left: 0.3125rem;
+      color: #000;
       content: '⭡'; }
     .top-btn-wrap .top-btn:hover {
       text-decoration: underline; }

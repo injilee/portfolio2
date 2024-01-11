@@ -50,11 +50,13 @@
     @include text-style(19);
     padding: 0.5rem;
     font-weight: 400;
+    color: $black;
     cursor: pointer;
 
     &::after {
       display: inline-block;
       padding-left: 0.3125rem;
+      color: $black;
       content: '⭡';
     }
 
