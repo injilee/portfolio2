@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: $progress-bar;
   display: flex;
   flex-grow: 0;
   flex-shrink: 0;
