@@ -22,6 +22,10 @@ main {
 .intro {
   padding: 7.875rem 0 4.125rem;
 
+  @include responsive('T') {
+    padding-bottom: 6.5rem;
+  }
+
   &-title {
     @include text-style(48);
     margin-bottom: 2.125rem;
