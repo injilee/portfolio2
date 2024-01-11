@@ -42,3 +42,28 @@
     }
   }
 }
+
+.top-btn-wrap {
+  text-align: right;
+
+  .top-btn {
+    @include text-style(19);
+    padding: 0.5rem;
+    font-weight: 400;
+    cursor: pointer;
+
+    &::after {
+      display: inline-block;
+      padding-left: 0.3125rem;
+      content: '⭡';
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include responsive('T') {
+    padding-bottom: 4.5rem;
+  }
+}
