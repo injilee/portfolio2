@@ -50,6 +50,28 @@ main {
   }
 }
 
+.works {
+  padding: 2.5rem 0 4.5rem;
+
+  .company {
+    @include text-style(28);
+  }
+
+  &-container {
+    .roll {
+      @include text-style(24);
+      margin-bottom: 0.3rem;
+    }
+    .period {
+      @include text-style(19);
+      margin-bottom: 1rem;
+    }
+    .desc {
+      @include text-style(19);
+    }
+  }
+}
+
 .exp {
   padding: 2.5rem 0 4.5rem;
 
